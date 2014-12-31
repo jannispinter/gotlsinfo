@@ -11,7 +11,7 @@ It is particularly useful for offline/intranet websites, where you cannot make u
 ##Installation
 Obtain a copy of the source code and make sure you have a Go compiler installed on your system.
 
-```clone https://github.com/jannispinter/gotlsinfo```
+```git clone https://github.com/jannispinter/gotlsinfo```
 
 
 Build the project:
