@@ -11,25 +11,33 @@ It is particularly useful for offline/intranet websites, where you cannot make u
 ##Installation
 Obtain a copy of the source code and make sure you have a Go compiler installed on your system.
 
-```git clone https://github.com/jannispinter/gotlsinfo```
-
+```sh 
+git clone https://github.com/jannispinter/gotlsinfo
+```
 
 Build the project:
 
-```cd gotlsinfo && go build```
+```sh
+cd gotlsinfo && go build
+```
 
 ##Usage
-```./gotlsinfo <hostname/ip> <port>```
+```sh
+./gotlsinfo <hostname/ip> <port>
+```
 
 ###Examples:
-```./gotlsinfo google.com 443```
-
-```./gotlsinfo 127.0.0.1 8443```
+```sh
+./gotlsinfo google.com 443
+./gotlsinfo 127.0.0.1 8443
+```
 
 ###Only show supported ciphers:
 On UNIX, pipe the output of the program to `grep` and exclude "NOT":
 
-```./gotlsinfo google.com 443 | grep -v "NOT"```
+```sh
+./gotlsinfo google.com 443 | grep -v "NOT"
+```
 
 On Windows: Err.. No..
 
